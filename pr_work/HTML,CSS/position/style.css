@@ -1,0 +1,45 @@
+body{
+    height: 500vh;
+}
+
+.span{
+    background-color:cadetblue;
+
+}
+/* .abc{
+    background-color: aqua;
+    color: blue;
+} */
+
+.relative{
+    height: 400px;
+    width: 400px;
+    background-color:aqua;
+    position: relative;
+}
+
+.absolute {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.fixed{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: fixed;
+    right: 0;
+
+}
+
+.sticky{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: sticky;
+    bottom: 100px;
+}

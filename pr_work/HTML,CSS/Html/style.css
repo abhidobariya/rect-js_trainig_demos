@@ -1,0 +1,20 @@
+.cafe{
+    background-color: bisque;
+    color: blueviolet;
+}
+
+.abc{
+    background-color: bisque;
+    color: blueviolet;
+}
+
+.margin{
+    margin: 50px;
+    background-color: orange;
+}
+
+.padding{
+    border: solid black;
+    background-color: aquamarine;
+    padding: 20px;
+}

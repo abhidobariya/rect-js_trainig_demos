@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light {
+          --light: white;
+          --dark: black;
+        }
+    
+        .dark {
+          --light: black;
+          --dark: white;
+        }
+    
+        .box {
+          height: 300px;
+          width: 300px;
+          border: 2px solid var(--dark);
+          background-color: var(--light);
+        }
+      </style>  
+</head>
+
+<body>
+    <div class="box light" id="themeContent"></div>
+
+  <button onclick="changeTheme()">Change theme</button>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

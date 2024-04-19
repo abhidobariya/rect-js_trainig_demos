@@ -1,0 +1,73 @@
+.parent{
+    border: 3px solid black;
+}
+
+.parent>div:nth-child(2){
+    background-color: red;
+}
+
+.parent>div:last-child>p{
+    background-color: aqua;
+}
+
+.parent>div:last-child>div>p{
+    background-color: beige;
+}
+
+.allElement{
+    border: 2px solid blueviolet;
+    margin: 5px 0;
+}
+
+.allElement>p{
+    font-size: 20px;
+}
+
+.selector{
+    border: 3px solid blue;
+}
+
+.selector p:first-child{
+    background-color: aqua;
+}
+
+.selector p:last-child{
+    background-color: blueviolet;
+    color: blanchedalmond;
+}
+
+.selector p:nth-child(2){
+    background-color: cadetblue;
+}
+
+.selector p:nth-child(3),
+.selector p:nth-child(4){
+    background-color: black;
+    color: white;
+    font-size: 35px;
+}
+
+.link{
+    border: 3px solid salmon;
+    margin: 5px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.link a:first-child{
+    text-decoration: none;
+    color: black;
+}
+
+.link a:first-child:hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.link a:first-child:active{
+    color: aquamarine;
+}
+
+.link a:nth-child(2):visited{
+    color: red;
+}

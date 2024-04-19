@@ -1,0 +1,112 @@
+.flex>div{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.evenly{
+    justify-content: space-evenly;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.align{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.align>div{
+    background-color: black;
+    margin: 10px;
+}
+
+.align>div:first-child{
+    width: 100px;
+    height: 100px;
+}
+
+.align>div:nth-child(2){
+    width: 100px;
+    height: 50px;
+}
+
+.align>div:last-child{
+    width: 200px;
+    height: 150px;
+}
+
+.itemcenter{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemcenter>div{
+    background-color: blueviolet;
+    height: 50px;
+    width: 50px;
+}
+
+.headingCenter{
+    border: 2px solid red;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.positioncenter{
+    position: relative;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+.positioncenter>div{
+    position: absolute;
+    background-color: black;
+    width: fit-content;
+    color: white;
+}
+
+.topLeft{
+    left: 0;
+}
+
+.topRight{
+    right: 0;
+}
+
+.bottomLeft{
+    bottom: 0;
+}
+
+.bottomRight{
+    bottom: 0;
+    right: 0;
+}
+
+.posCenter{
+    top:50%;
+    right: 50%;
+}

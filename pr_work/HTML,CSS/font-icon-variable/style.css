@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
+
+
+:root{
+    --headingBg:aqua;
+    --headingFont: 'Kanit';
+
+    --pharFont:'Inconsolata',monospace;
+}
+.Insta{
+    color: rgb(240, 78, 118);
+    font-size: 60px;
+    margin: 5px;
+}
+
+.gFont{
+    color: black;
+    background-color: var(--headingBg); 
+    font-family: var(--headingFont);
+}
+
+.artical{
+    font-size: 40px;
+    font-family: var(--pharFont);
+}

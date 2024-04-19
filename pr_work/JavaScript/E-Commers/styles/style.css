@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    transition: .5s;
+    user-select: none;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--nav-bg);
+    color: var(--black);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    transition: .5s;
+    z-index: 10;
+  }
+  
+  .headingEndSearch {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Search {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+  }
+  
+  .SearchParent {
+    position: relative;
+  }
+  
+  .magnifyingIcon {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .magnifyingIcon:active {
+    scale: .9;
+  }
+  
+  .SearchParent>input {
+    height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 0px 30px 0 5px;
+    background-color: transparent;
+    color: var(--black);
+    border: 3px inset var(--black);
+  }
+  
+  .activeSearchInput {
+    display: block;
+    width: 100%;
+  }
+  
+  .navController {
+    display: flex;
+    margin: 0 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0 100px;
+  }
+  
+  nav ul>li {
+    list-style: none;
+    margin: 0 30px;
+    cursor: pointer;
+  }
+  
+  .refLinks {
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .refLinks a {
+    color: var(--black);
+    transition: .5s;
+  }
+  
+  .refLinks>div {
+    margin: 0 10px;
+  }
+  
+  .themeBtn {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .themeIcon {
+    color: var(--white);
+  }
+  
+  .navLink {
+    color: var(--black);
+  }
+  
+  .active {
+    color: var(--nav-color);
+    font-weight: bold;
+  }
+
+
+main{
+    padding: 60px 10px 10px 10px;
+}
+
+#hereRenderProducts {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.productCard {
+    position: relative;
+    display: flex;
+    background-color: var(--productsCardBg);
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px gray;
+  }
+  
+  .productDetail {
+    padding: 10px;
+  }
+  
+  .productPrice {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .productPrice>div>p>span {
+    margin: 0 10px;
+  }
+  
+  .productPrice>div>p>span:first-child {
+    color: var(--delPrice);
+  }
+  
+  .addToCartBtn>div {
+    background-color: var(--addToCartBtnBg);
+  }
+  
+  .removeCartBtn>div {
+    background-color: var(--removeCartBtnBg);
+  }
+  
+  .addToCartBtn>div,
+  .removeCartBtn>div {
+    margin: 0 0 5px 170px;
+    border: 2px solid var(--white);
+    padding: 5px;
+    color: var(--black);
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: inset 0 0 3px var(--black);
+  }
+  
+  .addToCartBtn>div:active,
+  .removeCartBtn>div:active {
+    scale: .95;
+  }
+  
+  .productImage {
+    padding: 5px 5px 0 5px;
+    filter: blur(2px);
+  }
+  
+  .productImage:hover {
+    box-shadow: inset 0 0 20px black;
+    transition: .2s;
+    cursor: pointer;
+    filter: blur(0);
+  }
+  
+  .productImage>img {
+    width: 250px;
+    border-radius: 3px;
+  }
+  
+  #cartDataRender>.productCard {
+    margin: 10px 0;
+  }
+  
+  .popup {
+    position: fixed;
+    bottom: 10px;
+    right: -1000px;
+    padding: 10px;
+    border: 2px dashed var(--black);
+    border-radius: 10px;
+    transition: .5s ease-in;
+    opacity: .8;
+  }
+  
+  .alertPopup {
+    right: 10px;
+    background-color: var(--alertPopupBg);
+  }
+  
+  .successPopup {
+    right: 10px;
+    background-color: var(--successPopupBg);
+  }
+  
+  .showProductImage {
+    display: none;
+    z-index: 20;
+    position: fixed;
+    background-color: var(--black);
+    top: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .ActiveProductsImage {
+    display: block;
+  }
+  
+  #cancelBtn {
+    position: absolute;
+    right: 0;
+    margin: 15px;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn:active {
+    scale: .9;
+  }
+  
+  .productImageChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    height: 100vh;
+  }
+  
+  .productImageChild>img {
+    width: 700px;
+  }

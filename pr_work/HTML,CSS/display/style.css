@@ -1,0 +1,49 @@
+.display-none{
+    border: 2px solid black;
+    display: none;
+}
+
+.hover{
+    border: 3px solid black;
+}
+
+.hover-block{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+}
+
+.none{
+    display: none;
+}
+
+.hover:hover .none{
+    display: block;
+}
+
+.drop>ul{
+    display: none;
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 10px;
+}
+
+.drop>ul>li{
+    list-style: none;
+    border-bottom: 3px solid black;
+    padding: 5px;
+}
+
+.drop:hover .down{
+    display: block;
+}
+
+.drop>ul>li:last-child{
+    border: none;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+          <li class="navLink" onclick="toggleNav('home')" id="default">Home</li>
+          <li class="navLink" onclick="toggleNav('products')">products</li>
+          <li class="navLink" onclick="toggleNav('cart')">cart</li>
+        </ul>
+      </nav>
+      
+      <main>
+        <div id="home" class="container">
+          <h1>This is a Home Page</h1>
+        </div>
+        <div id="products" class="container">
+          <h1>This is a products page</h1>
+        </div>
+        <div id="cart" class="container">
+          <h1>This is a cart page</h1>
+        </div>
+      </main>
+      
+    <script src="./script.js"></script>
+</body>
+</html>

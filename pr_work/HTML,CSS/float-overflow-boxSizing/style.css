@@ -1,0 +1,43 @@
+.overF{
+    height: 900px;
+    width: 800px;
+    border: 4px solid black;
+    padding: 10px;
+    overflow: auto;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+}
+
+.floatRight{
+    float: right;
+}
+
+.float{
+    float: left;
+}
+
+.box-sizing{
+    display: flex;
+    margin: 20px;
+}
+
+.box-sizing>div{
+    border: 2px solid black;
+    height: 400px;
+    width: 300px;
+    background-color: aqua;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box-sizing>div:last-child{
+    box-sizing: border-box;
+}
+
+.box-sizing>div>p{
+    margin: 0;
+    padding: 0;
+}
